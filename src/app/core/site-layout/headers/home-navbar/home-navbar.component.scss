@@ -1,0 +1,27 @@
+.navbar {
+  background-color: var(--color-primary);
+  height: 50px;
+  .container-fluid {
+    background-color: var(--color-primary);
+    .navbar-brand {
+      width: 200px;
+      color: white;
+      font-weight: bold;
+    }
+
+    #HomeNavbarToggle {
+      justify-content: center;
+      .navbar-nav {
+        justify-content: space-around;
+        .nav-item {
+          padding: 0px 12px;
+          .nav-link {
+            font-size: large;
+            font-weight: normal;
+            color: var(--color-secondary);
+          }
+        }
+      }
+    }
+  }
+}

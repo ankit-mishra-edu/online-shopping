@@ -1,0 +1,17 @@
+<div *ngIf="currentRouteURL$ | async as currentRouteURL" style="height: 100%">
+  <div class="home-navbar" *ngIf="routeIsHomeURL(currentRouteURL.url)">
+    <app-home-navbar
+      [titleUnColored]="'Pi'"
+      [titleColored]="'Fi'"
+    ></app-home-navbar>
+  </div>
+  <div
+    class="shopping-navbar"
+    *ngIf="routeIsLiveShoppingURL(currentRouteURL.url)"
+  >
+    <app-shopping-navbar
+      [titleUnColored]="'Shop '"
+      [titleColored]="' Here !!'"
+    ></app-shopping-navbar>
+  </div>
+</div>

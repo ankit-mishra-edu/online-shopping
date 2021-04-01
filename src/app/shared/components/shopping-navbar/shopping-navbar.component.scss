@@ -1,0 +1,57 @@
+.navbar {
+  block-size: 50px;
+  background-color: var(--color-primary) !important;
+  .container-fluid {
+    background-color: var(--color-primary);
+    .navbar-brand {
+      width: 200px;
+      color: white;
+      font-weight: bold;
+    }
+
+    #ShoppingNavbarToggle {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            // font-size: large;
+            // font-weight: normal;
+            // justify-content: space-between;
+
+            opacity: 1;
+            gap: 0.5rem;
+            position: relative;
+            place-items: center;
+            display: inline-flex;
+            color: var(--color-secondary);
+            justify-content: space-between;
+          }
+
+          .nav-link::before {
+            // left: 0;
+            // right: 0;
+            bottom: 0em;
+            height: 15px;
+            content: "";
+            display: block;
+            position: absolute;
+            transform: scale(1, 1);
+            background-color: var(--navbar-ternary);
+            transition: transform ease-in-out 200ms;
+          }
+
+          .nav-link:hover {
+            border-bottom: 4px solid black;
+          }
+
+          .nav-link:hover::before {
+            transform: scale(1, 1);
+          }
+        }
+
+        .nav-item :hover {
+          color: var(--navbar-ternary);
+        }
+      }
+    }
+  }
+}

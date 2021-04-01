@@ -1,0 +1,28 @@
+.sidebar {
+  background-color: #eee;
+  .sidebar-sticky {
+    .flex-column {
+      .nav-item {
+        .nav-link {
+          font-weight: 500;
+          color: var(--color-ternary);
+          padding: 0.5rem 1rem 0.5rem 1.5rem;
+          display: inline-block !important;
+
+          span {
+            padding-left: 0.5rem;
+          }
+        }
+
+        .nav-link.active {
+          color: #007bff;
+          padding: 0.5rem 1rem 0.5rem 1.5rem;
+        }
+      }
+    }
+
+    .sidebar-heading {
+      padding-left: 20px;
+    }
+  }
+}
