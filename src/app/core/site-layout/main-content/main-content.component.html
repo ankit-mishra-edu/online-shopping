@@ -1,17 +1,11 @@
-<div style="padding-top: 30px">
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="content">
-        <app-spinner
-          [spinnerColor]="'red'"
-          [spinnerSize]="'1.5rem'"
-          *ngIf="routingIsDelayed; else noDelayInRouting"
-          >{{ " Loading the requested page....." }}</app-spinner
-        >
-        <ng-template #noDelayInRouting>
-          <router-outlet></router-outlet>
-        </ng-template>
-      </div>
-    </div>
-  </div>
+<div style="padding-top: 5px">
+  <app-spinner
+    [spinnerColor]="'red'"
+    [spinnerSize]="'1.5rem'"
+    *ngIf="routingIsDelayed; else noDelayInRouting"
+    >{{ " Loading the requested page....." }}</app-spinner
+  >
+  <ng-template #noDelayInRouting>
+    <router-outlet></router-outlet>
+  </ng-template>
 </div>

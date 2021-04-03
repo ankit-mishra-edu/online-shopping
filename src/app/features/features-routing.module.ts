@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 const featuresRoutes: Routes = [
   {
-    path: 'live-shopping',
+    path: 'shopping',
     loadChildren: () =>
-      import('./shopping/shopping.module').then((m) => m.LiveShoppingModule),
+      import('./shopping/shopping.module').then((m) => m.ShoppingModule),
   },
 ];
 

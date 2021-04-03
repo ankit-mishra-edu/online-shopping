@@ -7,6 +7,10 @@
       width: 150px;
       color: white;
       font-weight: bold;
+
+      .colored {
+        color: var(--color-secondary);
+      }
     }
 
     #HomeNavbarToggle {
@@ -19,7 +23,7 @@
             position: relative;
             place-items: center;
             display: inline-flex;
-            color: var(--color-secondary);
+            color: white;
             justify-content: space-between;
           }
 

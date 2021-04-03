@@ -1,5 +1,7 @@
 .navbar {
-  block-size: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-block-size: 50px;
   background-color: var(--color-primary) !important;
   .container-fluid {
     background-color: var(--color-primary);
@@ -7,6 +9,10 @@
       width: 150px;
       color: white;
       font-weight: bold;
+
+      .colored {
+        color: var(--color-secondary);
+      }
     }
 
     #ShoppingNavbarToggle {
@@ -14,12 +20,12 @@
         .nav-item {
           padding: 0px 4px;
           .nav-link {
-            opacity: 1;
+            // opacity: 1;
             gap: 0.5rem;
             position: relative;
             place-items: center;
             display: inline-flex;
-            color: var(--color-secondary);
+            color: white;
             justify-content: space-between;
           }
 
