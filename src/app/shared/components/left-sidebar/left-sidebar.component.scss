@@ -28,8 +28,7 @@
         }
 
         .nav-link.active {
-          color: #007bff;
-          padding: 0.5rem 1rem 0.5rem 1.5rem;
+          color: var(--color-primary);
         }
 
         .nav-link:hover {

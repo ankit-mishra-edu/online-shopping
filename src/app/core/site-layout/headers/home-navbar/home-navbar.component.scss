@@ -1,5 +1,7 @@
 .navbar {
-  block-size: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-block-size: 50px;
   background-color: var(--color-primary) !important;
   .container-fluid {
     background-color: var(--color-primary);
