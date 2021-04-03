@@ -4,7 +4,7 @@
   .container-fluid {
     background-color: var(--color-primary);
     .navbar-brand {
-      width: 200px;
+      width: 150px;
       color: white;
       font-weight: bold;
     }
@@ -12,11 +12,8 @@
     #ShoppingNavbarToggle {
       .navbar-nav {
         .nav-item {
+          padding: 0px 4px;
           .nav-link {
-            // font-size: large;
-            // font-weight: normal;
-            // justify-content: space-between;
-
             opacity: 1;
             gap: 0.5rem;
             position: relative;

@@ -7,7 +7,12 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { SecondaryNavbarComponent } from './secondary-navbar/secondary-navbar.component';
 
 @NgModule({
-  declarations: [HeadersComponent, PrimaryNavbarComponent, HomeNavbarComponent, SecondaryNavbarComponent],
+  declarations: [
+    HeadersComponent,
+    PrimaryNavbarComponent,
+    HomeNavbarComponent,
+    SecondaryNavbarComponent,
+  ],
   imports: [CommonModule, SharedModule],
   exports: [HeadersComponent],
 })
