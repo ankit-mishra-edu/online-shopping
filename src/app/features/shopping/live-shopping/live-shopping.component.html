@@ -1,1 +1,46 @@
-<p>live-shopping works!</p>
+<div class="live-shopping">
+  <div
+    class="container-fluid main-container-width-with-header"
+    style="margin-top: 10px"
+  >
+    <h3>Remote Screen</h3>
+    <div class="row">
+      <div class="col-md-8">
+        <h5>Connect with Peer</h5>
+
+        <!-- Video & screen share container -->
+        <span>PeerId: {{ peerId }}</span>
+        <video
+          style="width: 100%; height: auto; border: 2px solid"
+          id="remote-video"
+          class="embed-responsive-item"
+        ></video>
+
+        <br />
+        <div class="input-group mb-3 mt-1">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Peer Id"
+            [(ngModel)]="peerIdShare"
+          />
+          <button class="btn btn-success" (click)="callPeer(peerIdShare)">
+            Call
+          </button>
+          <button class="btn btn-primary" (click)="shareScreen()">Share</button>
+          <button
+            class="btn btn-danger"
+            *ngIf="this.screenIsShared"
+            (click)="stopScreenShare()"
+          >
+            Stop Sharing
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h5>List of Users</h5>
+      </div>
+    </div>
+  </div>
+</div>

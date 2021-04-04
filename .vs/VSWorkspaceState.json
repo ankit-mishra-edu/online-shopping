@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\core",
+    "\\src\\app\\core\\services",
+    "\\src\\app\\core\\services\\shopping",
+    "\\src\\app\\features",
+    "\\src\\app\\features\\shopping",
+    "\\src\\app\\features\\shopping\\live-shopping"
+  ],
+  "SelectedNode": "\\src\\app\\features\\shopping\\live-shopping\\live-shopping.component.html",
+  "PreviewInSolutionExplorer": false
+}
