@@ -11,9 +11,15 @@
         <!-- Video & screen share container -->
         <span>PeerId: {{ peerId }}</span>
         <video
+          autoplay
           style="width: 100%; height: auto; border: 2px solid"
           id="remote-video"
           class="embed-responsive-item"
+          *ngIf="
+            (outgoingMediaStream$ | async) ||
+            (incomingJoinMediaStream$ | async) ||
+            (incomingHostMediaStream$ | async)
+          "
         ></video>
 
         <br />
@@ -24,10 +30,12 @@
             placeholder="Peer Id"
             [(ngModel)]="peerIdShare"
           />
-          <button class="btn btn-success" (click)="callPeer(peerIdShare)">
-            Call
+          <button class="btn btn-success" (click)="joinSession(peerIdShare)">
+            Join Session
           </button>
-          <button class="btn btn-primary" (click)="shareScreen()">Share</button>
+          <button class="btn btn-primary" (click)="hostSession(peerIdShare)">
+            Host Session
+          </button>
           <button
             class="btn btn-danger"
             *ngIf="this.screenIsShared"
@@ -40,6 +48,9 @@
 
       <div class="col-md-4">
         <h5>List of Users</h5>
+        <div *ngFor="let user of peerList">
+          {{ user }}
+        </div>
       </div>
     </div>
   </div>
